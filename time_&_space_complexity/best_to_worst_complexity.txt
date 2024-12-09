@@ -1,0 +1,9 @@
+Complexity  ->  Symbol              -> rank (best to worst)
+-------------------------------------------------
+Constant    ->  O(1)                ->  1
+logarithmic ->  O(logN)             ->  2
+square root ->  O(sqrt(N))          ->  3
+Linear      ->  O(N)                ->  4
+Linearthmic ->  O(NlogN)            ->  5
+Quadratic   ->  O(N*N) or O(N*M)    ->  6
+
