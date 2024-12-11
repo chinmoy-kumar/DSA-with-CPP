@@ -1,4 +1,4 @@
-Complexity  ->  Symbol              -> rank (best to worst)
+Complexity  ->  Symbol              -> Rank (best to worst)
 -------------------------------------------------
 Constant    ->  O(1)                ->  1
 logarithmic ->  O(logN)             ->  2
