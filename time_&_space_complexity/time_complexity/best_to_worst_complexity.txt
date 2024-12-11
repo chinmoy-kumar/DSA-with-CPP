@@ -8,5 +8,7 @@ Linearthmic ->  O(NlogN)            ->  5
 Quadratic   ->  O(N*N) or O(N*M)    ->  6
 
 
-NOTE: sort function time complexity O(NlogN)
+NOTE: 
+1) sort function time complexity O(NlogN)
 
+2) O() this called order of ...
