@@ -1,0 +1,2 @@
+Binary search time complexity is: O(logN)
+There are total 7 operations operated if the value of N is 100.
