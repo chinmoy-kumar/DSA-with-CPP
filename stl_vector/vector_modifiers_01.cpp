@@ -93,10 +93,20 @@ int main()
     cout << endl;
 
     // reverse()
-    
+    vector<int> v12 = {1, 2, 3, 4, 5};
+    reverse(v12.begin(), v12.end());
+    for(int x :  v12){
+        cout << x << " ";
+    }
+    cout << endl;
 
     // sort()
-
+    vector<int> v13 = {2, 1, 5, 7, 3, 9, 6};
+    sort(v13.begin(), v13.end());
+    for(int x : v13){
+        cout << x << " ";
+    }
+    cout << endl;
 
     return 0;
 }
