@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void func(int *&p){ // referance of a pointer
+void func(int *&p){ // reference of a pointer
     p = NULL;
 }
 
