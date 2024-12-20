@@ -15,15 +15,15 @@ public:
 };
 
 // insert at tail function
-void insert_at_tail(Node *&head, int val)
+void insert_at_tail(Node* &head, int val)
 {
-    Node *newNode = new Node(val); 
+    Node* newNode = new Node(val); 
     if (head == NULL) // for handle head = NULL case
     { 
         head = newNode;
         return;
     }
-    Node *temp = head;
+    Node* temp = head;
     while (temp->next != NULL)
     {
         temp = temp->next;
