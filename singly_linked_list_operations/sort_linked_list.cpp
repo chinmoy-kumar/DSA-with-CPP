@@ -1,3 +1,5 @@
+// NOTE: sorting linked list using selection sort
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -27,16 +29,30 @@ void insert_at_tail(Node *&head, Node *&tail, int val)
     tail = newNode;
 }
 
-void print_linked_list(Node* head)
+void print_linked_list(Node *head)
 {
-    Node* tmp = head;
-    while(tmp != NULL)
+    Node *tmp = head;
+    while (tmp != NULL)
     {
         cout << tmp->val << endl;
         tmp = tmp->next;
     }
 }
 
+void sort_linked_list(Node* head)
+{   
+    for (Node* i = head; i->next != NULL; i = i->next)
+    {
+        for (Node* j = i->next; j != NULL; j = j->next)
+        {
+            // if(i->val < j->val){ // descending order
+            if(i->val > j->val){ // ascending order
+                swap(i->val, j->val);
+            }
+        }
+        
+    }
+}
 
 int main()
 {
@@ -54,15 +70,20 @@ int main()
         insert_at_tail(head, tail, val);
     }
 
+    sort_linked_list(head);
+
     print_linked_list(head);
 
     return 0;
 }
 
-/* 
-Sample Input: 10 20 30 -1
+/*
+Sample Input: 10 2 40 50 5 -1
 
-sample output:  10 
-                20 
-                30
+sample output:  
+2
+5
+10
+40
+50
 */

@@ -37,6 +37,11 @@ void print_linked_list(Node* head)
     }
 }
 
+void delete_at_head(Node* &head){
+    Node* deleteNode = head;
+    head = head->next;
+    delete deleteNode;
+}
 
 int main()
 {
@@ -54,15 +59,18 @@ int main()
         insert_at_tail(head, tail, val);
     }
 
+    delete_at_head(head);
+    delete_at_head(head);
+
     print_linked_list(head);
 
     return 0;
 }
 
 /* 
-Sample Input: 10 20 30 -1
+Sample Input: 10 20 30 40 50 -1
 
-sample output:  10 
-                20 
-                30
+sample output:  30
+                40 
+                50
 */

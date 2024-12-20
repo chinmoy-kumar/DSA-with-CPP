@@ -27,16 +27,15 @@ void insert_at_tail(Node *&head, Node *&tail, int val)
     tail = newNode;
 }
 
-void print_linked_list(Node* head)
+void print_reverse(Node *temp)
 {
-    Node* tmp = head;
-    while(tmp != NULL)
+    if (temp == NULL)
     {
-        cout << tmp->val << endl;
-        tmp = tmp->next;
+        return;
     }
+    print_reverse(temp->next);
+    cout << temp->val << endl;
 }
-
 
 int main()
 {
@@ -54,15 +53,16 @@ int main()
         insert_at_tail(head, tail, val);
     }
 
-    print_linked_list(head);
+    print_reverse(head);
 
     return 0;
 }
 
-/* 
-Sample Input: 10 20 30 -1
+/*
+Sample input: 10 20 30 -1
 
-sample output:  10 
-                20 
-                30
+Sample output: 
+30
+20
+10
 */

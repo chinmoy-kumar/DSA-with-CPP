@@ -37,6 +37,17 @@ void print_linked_list(Node* head)
     }
 }
 
+void delete_at_tail(Node* head, Node* &tail, int idx){
+    Node* temp = head;
+    for (int i = 0; i < idx-1; i++)
+    {
+        temp = temp->next;
+    }
+    Node* deleteNode = temp->next;
+    temp->next = temp->next->next;
+    delete deleteNode;
+    tail = temp;
+}
 
 int main()
 {
@@ -53,16 +64,21 @@ int main()
         }
         insert_at_tail(head, tail, val);
     }
+    cout << "Tail before delete: "  << tail->val << endl;
+    delete_at_tail(head, tail, 4);
 
     print_linked_list(head);
+    cout << "Tail after delete: "  << tail->val << endl;
+
 
     return 0;
 }
 
 /* 
-Sample Input: 10 20 30 -1
+Sample Input: 10 20 30 40 50 -1
 
-sample output:  10 
+sample output:  10
                 20 
                 30
+                40
 */
