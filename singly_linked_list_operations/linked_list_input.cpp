@@ -5,7 +5,7 @@ class Node
 {
 public:
     int val;
-    Node *next;
+    Node* next;
 
     Node(int val)
     {
@@ -14,9 +14,9 @@ public:
     }
 };
 
-void insert_at_tail(Node *&head, Node *&tail, int val)
+void insert_at_tail(Node* &head, Node* &tail, int val)
 {
-    Node *newNode = new Node(val);
+    Node* newNode = new Node(val);
     if (head == NULL)
     {
         head = newNode;
@@ -40,8 +40,8 @@ void print_linked_list(Node* head)
 
 int main()
 {
-    Node *head = NULL;
-    Node *tail = NULL;
+    Node* head = NULL;
+    Node* tail = NULL;
 
     int val;
     while (1)
