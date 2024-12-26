@@ -16,15 +16,16 @@ class Node
         }
 };
 
-void delete_at_head(Node* &head, Node* &tail){
-    Node* deleteNode = head;
-    head = head->next;
-    delete deleteNode;
-    if(head == NULL){ // corner case
-        tail = NULL;
-        return;
+void delete_at_any_pos(Node* head, int idx){
+    Node* temp = head;
+    for (int i = 0; i < idx-1; i++)
+    {
+        temp = temp->next;
     }
-    head->pre = NULL;
+    Node* deleteNode = temp->next;
+    temp->next = temp->next->next;
+    temp->next->pre = temp;
+    delete deleteNode; 
 }
 
 void print_forward(Node* head){
@@ -48,9 +49,7 @@ int main(){
     a->next = tail;
     tail->pre = a;
 
-    delete_at_head(head, tail); 
-    delete_at_head(head, tail); 
-
+    delete_at_any_pos(head, 1);
     print_forward(head);
 
     return 0;
