@@ -1,3 +1,5 @@
+//NOTE: This program doesn't take the head at the last node. It just print the list in reverse order.
+
 #include <bits/stdc++.h>
 using namespace std;
 
