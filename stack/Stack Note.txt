@@ -1,0 +1,15 @@
+What is Stack?
+
+=> Stack is a Data Structure that follows LIFO techniques which means data is inserted at the top and also removed from the top.
+
+We use a stack when you need to manage data in a way where the last item added is the first one to be removed. 
+
+Stack Feature
+    - Abstract Data Structure
+    - Higher level Data Structure
+
+NOTE:
+    1) We can not access the next value of stack without delete or pop the previous vale.
+    2) We alawys need to check if the stack is empty or not using empty() function before using top() or pop() fucntion.
+
+
