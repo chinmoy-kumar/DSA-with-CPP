@@ -1,0 +1,5 @@
+Queue
+   - Abstract Data Structure
+   - Higher Level Data Structure
+
+NOTE: This data structure follows FIFO [First in First out]
