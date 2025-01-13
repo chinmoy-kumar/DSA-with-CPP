@@ -1,0 +1,11 @@
+Tree Data Structure
+----------------------
+	- hierarchy data structure
+	- Non-linear data structure
+	- one way moving, cannot go back
+
+Binary tree
+------------
+	- cann't have child more than 0, 1, 2
+	- 
+
