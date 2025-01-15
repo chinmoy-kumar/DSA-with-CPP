@@ -15,6 +15,14 @@ class Node
         }
 };
 
+void postorder(Node* root){     // print the binary tree
+    if(root == NULL)
+        return;
+    postorder(root->left);     // left
+    postorder(root->right);    // right 
+    cout << root->val << " "; // root
+}
+
 int main(){
     Node* root = new Node(10);
     Node* a = new Node(20);
@@ -29,5 +37,9 @@ int main(){
     b->left = d;
     b->right = e; 
 
+    postorder(root);
+
     return 0;
 }
+
+// output: 40 20 50 60 30 10 

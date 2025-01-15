@@ -15,6 +15,14 @@ class Node
         }
 };
 
+void inorder(Node* root){     // print the binary tree
+    if(root == NULL)
+        return;
+    inorder(root->left);     // left
+    cout << root->val << " "; // root
+    inorder(root->right);    // right 
+}
+
 int main(){
     Node* root = new Node(10);
     Node* a = new Node(20);
@@ -29,5 +37,9 @@ int main(){
     b->left = d;
     b->right = e; 
 
+    inorder(root);
+
     return 0;
 }
+
+// output: 40 20 10 50 30 60 
