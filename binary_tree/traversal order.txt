@@ -1,0 +1,7 @@
+Traversal order 2 types:
+    1) Deepth wise order
+        a) Pre-order
+        b) In-order
+        c) Post-order
+    2) Level wise order
+

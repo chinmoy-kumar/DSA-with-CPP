@@ -15,6 +15,9 @@ class Node
 };
 
 int main(){
+    // data-type pointer_variable = new data-type; // without constructor
+    // or,
+    // data-type pointer_variable = new data-type(val); // with constructor
     Node *head = new Node(10);
     Node *a = new Node(20);
     Node *b = new Node(30);
