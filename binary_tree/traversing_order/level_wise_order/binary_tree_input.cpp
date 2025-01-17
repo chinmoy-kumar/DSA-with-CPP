@@ -96,7 +96,7 @@ int main()
 }
 
 /* test case-01
-input: 10 20 30 40 -1 50 60 -1 -1 -1 -1 -1 -1
+input: 10 20 30 40 -1 50 60 -1 -1 -1 -1 -1 -1  (-1 means there is no childrean) 
 output: 10 20 30 40 50 60
 
 test case-02
