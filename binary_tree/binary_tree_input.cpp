@@ -43,10 +43,12 @@ Node *input_tree()
             myLeft = NULL;
         else
             myLeft = new Node(l);
+
         if (r == -1)
             myRight = NULL;
         else
             myRight = new Node(r);
+
         // create connections between parent and children
         p->left = myLeft;
         p->right = myRight;
@@ -96,7 +98,7 @@ int main()
 }
 
 /* test case-01
-input: 10 20 30 40 -1 50 60 -1 -1 -1 -1 -1 -1  (-1 means there is no childrean) 
+input: 10 20 30 40 -1 50 60 -1 -1 -1 -1 -1 -1  (-1 means there is no childrean)
 output: 10 20 30 40 50 60
 
 test case-02
