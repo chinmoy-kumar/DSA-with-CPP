@@ -27,9 +27,8 @@ Node *input_tree()
 
     queue<Node *> q;
     if (root)
-    {
         q.push(root);
-    }
+    
     while (!q.empty())
     {
         Node *p = q.front();
@@ -69,7 +68,6 @@ int count_leaf_node(Node* root){
     int l = count_leaf_node(root->left);
     int r = count_leaf_node(root->right);
     return l + r;
-
 }
 
 int main()

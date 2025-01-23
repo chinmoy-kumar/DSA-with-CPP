@@ -1,0 +1,1 @@
+It helps to store two values as a pair. The data-type of those values can be different from each other.
