@@ -1,0 +1,5 @@
+General rule of binary tree:
+	1. All parent can have maximum 2 children
+Binary search tree rule:
+	1. All values of left-sub tree < node->val
+	2. All values of right-sub tree > node->val
