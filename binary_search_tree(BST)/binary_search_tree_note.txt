@@ -3,3 +3,6 @@ General rule of binary tree:
 Binary search tree rule:
 	1. All values of left-sub tree < node->val
 	2. All values of right-sub tree > node->val
+
+Time Complexitiy:
+    - Binary search tree time complexitiy is O(h) [Here h is height of that binary tree]
