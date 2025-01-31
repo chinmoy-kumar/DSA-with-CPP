@@ -1,0 +1,7 @@
+### Fomula to find the left and right child index in an array for a complete binary tree:
+    parent_index x 2 + 1 = left_child_index
+    parent_index x 2 + 2 = right_child_index
+
+### Formula to find the parent index for a child index:
+    (child_index - 1) / 2 = parent_index;
+
