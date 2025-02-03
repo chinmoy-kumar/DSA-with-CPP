@@ -1,3 +1,5 @@
+// Time Complexity: for one val -> O(logN)
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -33,7 +35,7 @@ int main()
 /* test case 01
 -----------------------
 input:  7
+output: 5 6 30 10 15 40 45 11 
         5 10 30 11 15 40 45
         6   
-output: 5 6 30 10 15 40 45 11 
 */

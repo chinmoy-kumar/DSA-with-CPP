@@ -1,3 +1,5 @@
+// Time Complexity: for one val -> O(logN)
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -10,7 +12,7 @@ int main()
     int val;
     cin >> val;
     v.push_back(val);
-    int child_idx = v.size() - 1;
+    int child_idx = v.size()-1;
 
     while (child_idx != 0)
     {
