@@ -13,3 +13,8 @@
     -Adjacency Matrix
     -Adjacency List
     -Edge List
+
+# Which one used for what?
+    - Check 2 nodes are connected or not: Adjacency matrix
+    - All the connected nodes from a node: Adjacency list
+    - To get the edges and no need of connections: Edge list 
