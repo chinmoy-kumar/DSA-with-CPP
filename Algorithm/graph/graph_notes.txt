@@ -1,0 +1,15 @@
+# Types of Graphs
+    -Direction
+        1. Directed
+        2. Undirected
+    -Weight
+        1. Weighted
+        2. Unweighted
+    -Cycle
+        1. Cyclic
+        2. Acyclic
+
+# Ways of taking input in Graphs
+    -Adjacency Matrix
+    -Adjacency List
+    -Edge List

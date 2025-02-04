@@ -7,6 +7,8 @@ int main()
     mp["ramim"] = 500;
     mp["shamim"] = 50;
     
+    // structure: map_name[key] = value;
+
     // for(auto it = mp.begin(); it!= mp.end();it++)     // O(NlogN)
     // {
     //     cout << it->first << " " << it->second << endl;      // logN
