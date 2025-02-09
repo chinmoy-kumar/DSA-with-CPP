@@ -4,22 +4,23 @@ using namespace std;
 vector<int> adj_list[1005];
 bool vis[1005];
 int level[1005];
+int parent[1005];
 
-void bsf(int src){
+void bfs(int src){
     queue<int> q;
     q.push(src);
     vis[src] = true;
-    level[src] = 0;
 
     while(!q.empty()){
-        int parent = q.front();
-        q.pop();    
+        int par = q.front();
+        q.pop();
 
-        for(int child : adj_list[parent]){
+        for(int child : adj_list[par]){
             if(vis[child] == false){
                 q.push(child);
                 vis[child] = true;
-                level[child] = level[parent] + 1;
+                level[child] = level[par] + 1;
+                parent[child] = par;
             }
         }
     }
@@ -28,7 +29,7 @@ void bsf(int src){
 
 int main(){
     int n, e;
-    cin >> n >> e;                  
+    cin >> n >> e;
 
     while(e--){
         int a, b;
@@ -39,28 +40,32 @@ int main(){
 
     memset(vis, false, sizeof(vis));
     memset(level, -1, sizeof(level));
+    memset(parent, -1, sizeof(parent));
+    
     int src, dst;
     cin >> src >> dst;
-    bsf(src);
+    bfs(src);
 
-    /* check all level distance
-    ------------------------------
-    for(int i = 0; i < n; i++){
-        cout << i << " -> " << level[i] << endl;
+    vector<int> path;
+    int node = dst;
+    while(node != -1){
+        path.push_back(node);
+        node = parent[node];
     }
-    */
 
-    cout << level[dst] << endl; 
+    reverse(path.begin(), path.end());
+    for(int x : path)
+        cout << x << " ";
 
     return 0;
 }
 
-/* Test Case: 01
-------------------
-input:
+/* Test Case - 01
+--------------------
+input: 
 7 7
 0 1 
-1 3     
+1 3
 3 2
 1 4
 3 5
@@ -69,39 +74,26 @@ input:
 0 
 6
 
-output:
-4
+output: 
+0 1 3 5 6 
 
-Test Case: 02
-------------------
-7 6
+Test Case - 02
+-----------------
+input:
+7 8
 0 1 
 1 3
 3 2
 1 4
+3 5
 2 5
 5 6
+4 6
 0 
 6
 
-output: 
-5
-
-Test Case: 03
-------------------
-input: 
-9 7
-0 1 
-1 3
-3 2
-1 4
-2 5
-5 6
-7 8
-0 
-8
-
 output:
--1
+0 1 4 6 
+
 
 */
