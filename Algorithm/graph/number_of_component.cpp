@@ -4,7 +4,6 @@ vector<int> adj_list[1005];
 bool vis[1005];
 
 void dfs(int src){
-    cout << src << " ";
     vis[src] = true;
     for(int child : adj_list[src]){
         if(vis[child] == false)
@@ -24,7 +23,15 @@ int main()
         adj_list[b].push_back(a);
     }
     memset(vis, false, sizeof(vis));
-    dfs(0);
+    int count = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if(vis[i] == false){
+            dfs(i);
+            count++;
+        }
+    }
+    cout << count << endl;
 
     return 0;
 }
@@ -32,16 +39,15 @@ int main()
 /* Test Case - 01
 -------------------
 input:
-7 7
-0 2
-2 4
-0 1
-1 5
+8 6
+1 2
+0 5 
+2 3
+6 7
+4 5
 1 3
-0 3
-3 6
 
 output:
-0 2 4 1 5 3 6 
+3
 
 */
