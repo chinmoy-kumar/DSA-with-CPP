@@ -2,8 +2,8 @@
     -Direction
         1. Directed
         2. Undirected
-    -Weight
-        1. Weighted
+    -Weight 
+        1. Weighted (it can be many thing in real life like distance, time, cost etc)
         2. Unweighted
     -Cycle
         1. Cyclic

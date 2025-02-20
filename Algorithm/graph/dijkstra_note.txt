@@ -1,0 +1,7 @@
+Dijkstra algorithm used to get single source shortest distance.
+
+BFS also can do this but BFS works when the graph is unweighted. It doesn't work for weighted graph.
+
+For
+  - Weight: Dijkstra algorithm
+  - Unwight: BFS algorithm
