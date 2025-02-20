@@ -23,6 +23,7 @@ int main()
         adj_list[b].push_back(a);
     }
     memset(vis, false, sizeof(vis));
+    
     int count = 0;
     for (int i = 0; i < n; i++)
     {
