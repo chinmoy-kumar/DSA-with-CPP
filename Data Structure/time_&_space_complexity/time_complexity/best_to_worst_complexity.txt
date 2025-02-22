@@ -12,3 +12,5 @@ NOTE:
 1) sort function time complexity O(NlogN)
 
 2) O() this called order of ...
+
+3) Most of the online judges give a time limit for compilation of up to 1 sec, and the highest, 10^7, can be compiled within 1 sec.
