@@ -1,0 +1,27 @@
+# Single Source Shortest Distance
+===================================
+BFS graph: 
+    - Doesn't works for weighted graph.
+    - Time complexity: O(V + E)
+
+Dijkstra: 
+    - Only works for single source graph
+    - Doesn't work if negative weighted cycle is present in graph.
+    - Time complexity: O(ElogV)
+
+Bellman-ford:
+    - Only works for single source graph
+    - Time complexity is worse than Dijkstra but can handle negative weighted cycle.
+    - Time complexity: O(V x E)
+
+# All Pair Shortest Distance
+=================================
+Floyd-warshall
+    - Time complexity: O(v^3)
+    
+
+
+
+
+
+
