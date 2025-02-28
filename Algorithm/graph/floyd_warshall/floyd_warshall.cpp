@@ -29,6 +29,7 @@ int main()
         // adj_mat[b][a] = c; // undirected
     }
 
+    // floyd_warshall
     for (int k = 0; k < n; k++)
     {
         for (int i = 0; i < n; i++)
@@ -55,3 +56,21 @@ int main()
 
     return 0;
 }
+
+/* Test Case - 01
+-------------------
+input:
+4 5
+0 1 3
+0 2 6
+1 2 2
+1 3 5
+2 3 4
+
+output:
+0 3 5 8 
+INF 0 2 5 
+INF INF 0 4 
+INF INF INF 0 
+
+*/

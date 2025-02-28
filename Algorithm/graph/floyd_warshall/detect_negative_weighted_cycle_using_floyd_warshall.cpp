@@ -37,17 +37,61 @@ int main()
         }
     }
 
+    bool cycle = false;
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < n; j++)
+        if (adj_mat[i][i] < 0)
+            cycle = true;
+    }
+
+    if (cycle == true)
+        cout << "Negative weighted cycle detected";
+    else
+    {
+        for (int i = 0; i < n; i++)
         {
-            if (adj_mat[i][j] == INT_MAX)
-                cout << "INF ";
-            else
-                cout << adj_mat[i][j] << " ";
+            for (int j = 0; j < n; j++)
+            {
+                if (adj_mat[i][j] == INT_MAX)
+                    cout << "INF ";
+                else
+                    cout << adj_mat[i][j] << " ";
+            }
+            cout << endl;
         }
-        cout << endl;
     }
 
     return 0;
 }
+
+/* Test Case - 01
+-------------------
+input:
+4 5
+0 1 3
+2 0 -6
+1 2 2
+1 3 5
+2 3 4
+
+output:
+Negative weighted cycle detected
+
+Test Case - 02
+-------------------
+input:
+4 5
+0 1 3
+0 2 6
+1 2 2
+1 3 5
+2 3 4
+
+output:
+0 3 5 8 
+INF 0 2 5 
+INF INF 0 4 
+INF INF INF 0 
+
+
+*/
