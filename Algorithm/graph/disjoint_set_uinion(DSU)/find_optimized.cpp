@@ -1,5 +1,5 @@
 /*-------------------------
-Time Complexity: O(n)
+Time Complexity: O(logN)
 -------------------------*/
 
 #include <bits/stdc++.h>
@@ -11,6 +11,7 @@ int find(int node)
     if(par[node] == -1)
         return node;
     int leader = find(par[node]);
+    par[node] = leader;
     return leader;
 }
 

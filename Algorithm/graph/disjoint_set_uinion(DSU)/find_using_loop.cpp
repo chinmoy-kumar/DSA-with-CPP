@@ -1,3 +1,7 @@
+/*-------------------------
+Time Complexity: O(n)
+-------------------------*/
+
 #include <bits/stdc++.h>
 using namespace std;
 int par[1005];
