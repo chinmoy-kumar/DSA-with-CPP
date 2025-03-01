@@ -1,3 +1,7 @@
+/*-------------------------
+Time Complexity: O(𝛂(N)); Here the value of 𝛂 is near to 4
+-------------------------*/
+
 #include <bits/stdc++.h>
 using namespace std;
 int par[1005];
