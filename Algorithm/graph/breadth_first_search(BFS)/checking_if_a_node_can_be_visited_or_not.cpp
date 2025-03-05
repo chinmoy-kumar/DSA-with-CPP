@@ -4,7 +4,7 @@ using namespace std;
 vector<int> adj_list[1005];
 bool vis[1005];
 
-void bsf(int src){
+void bfs(int src){
     queue<int> q;
     q.push(src);
     vis[src] = true;
@@ -36,7 +36,7 @@ int main(){
     memset(vis,false, sizeof(vis));
     int src, dist;
     cin >> src >> dist;
-    bsf(src);
+    bfs(src);
 
     if(vis[dist])
         cout << "YES" << endl;

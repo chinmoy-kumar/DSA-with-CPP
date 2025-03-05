@@ -9,8 +9,8 @@ BFS graph:
     - Time complexity: O(V + E).
 
 Dijkstra: 
-    - Uses Adjacency List
-    - Only works for single source graph
+    - Uses Adjacency List.
+    - Only works for single source graph.
     - Doesn't work if negative weighted cycle is present in graph.
     - Time complexity: O(ElogV).
 
@@ -33,6 +33,12 @@ Floyd-warshall
     1. BFS [O(V+E]
     2. Dijkstra [O(E x logV)]
     3. Bellman-Ford [O(V x E)]
+
+# Disjoint_set_union(DSU)
+==================================
+    1. It cannot detect cycle in directed graph
+    2. 
+
     
 
 
