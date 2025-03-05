@@ -14,8 +14,8 @@ int find(int node)
 
 void dsu_union(int node1, int node2)
 {
-    int leader1 = node1;
-    int leader2 = node2;
+    int leader1 = find(node1);
+    int leader2 = find(node2);
 
     if (grp_sz[leader1] >= grp_sz[leader2])
     {
