@@ -1,0 +1,5 @@
+Dynamic Programming
+=====================
+2 types: 
+top-down: recursion approch
+bottom-up: loop approch
