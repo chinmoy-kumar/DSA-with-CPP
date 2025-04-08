@@ -11,10 +11,11 @@ int main(){
     
     for (int i = 0; i < n-1; i++)
     {
-        // for (int j = i+1; j > n; j++) // descending order
-        for (int j = i+1; j < n; j++) // ascending order
+        for (int j = i+1; j < n; j++)
         {
-            if(arr[i] > arr[j]){
+            // if(arr[i] < arr[j]) //  descending order
+            if(arr[i] > arr[j])  // ascending order
+            {
                 swap(arr[i], arr[j]);
             }
         }

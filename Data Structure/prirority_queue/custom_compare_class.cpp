@@ -19,6 +19,9 @@ class cmp
     public:
         bool operator()(Student l, Student r)
         {
+            return l.marks > r.marks; // if marks are always unique
+
+            // if marks can be same
             if(l.marks > r.marks)
                 return true;
             else if(l.marks < r.marks)

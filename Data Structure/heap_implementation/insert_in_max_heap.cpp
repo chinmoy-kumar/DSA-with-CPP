@@ -14,6 +14,7 @@ int main()
     v.push_back(val);
     int child_idx = v.size()-1;
 
+    // insert max heap------------------------------
     while (child_idx != 0)
     {
         int parent_idx = (child_idx - 1) / 2;
@@ -23,6 +24,7 @@ int main()
             break;
         child_idx = parent_idx;
     }
+    //-----------------------------------------------
 
     for(int x : v)
         cout << x << " ";

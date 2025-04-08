@@ -1,6 +1,8 @@
 /*----------------------------
 Time Complexity: O(N)
 -----------------------------*/
+// loop (bottom up approch)
+
 #include <bits/stdc++.h>
 using namespace std;
 int main(){

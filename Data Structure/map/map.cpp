@@ -16,9 +16,9 @@ int main()
 
     if(mp.count("hamim"))
     {
-        cout << "Ache";
+        cout << "Ache" << endl;
     }
     else    
-        cout << "Nai";
+        cout << "Nai" << endl;
     return 0;
 }

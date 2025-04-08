@@ -1,4 +1,3 @@
-
 /* problem: 
 Description: Given an array of integers, find the equilibrium index. An equilibrium index is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes.
 Example:
