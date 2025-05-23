@@ -10,7 +10,8 @@ int main()
     int n, m;
     cin >> n >> m;
 
-    vector<vector<int>> v(n, vector<int>(m, 3));
+    vector<vector<int>> v(n, vector<int>(m, 3)); 
+    // here 3 is the default value for initialization as m integers.
 
     for (int i = 0; i < n; i++)
     {
